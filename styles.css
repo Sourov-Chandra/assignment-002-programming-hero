@@ -34,8 +34,8 @@
 /* header  styles */
 
 #header {
-    /* background-color: saddlebrown; */
-  background-color: #1A0B2E;
+  /* background-color: saddlebrown; */
+  background-color: #1a0b2e;
 }
 
 .navbar {
@@ -47,15 +47,19 @@
 }
 
 .logo h1 #first-one {
-    color: white;
+  color: white;
 }
 
-.logo h1 #second-one  {
-    background: linear-gradient(to right, rgba(251, 9, 180, 1), rgba(145, 0, 248, 1));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    font-weight: bold;
+.logo h1 #second-one {
+  background: linear-gradient(
+    to right,
+    rgba(251, 9, 180, 1),
+    rgba(145, 0, 248, 1)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: bold;
 }
 .navbar .menu li {
   list-style: none;
@@ -83,152 +87,226 @@
   gap: 4px;
 }
 
+/* mobile responsive navbar */
+.mobile-nav {
+  display: none;
+}
+
 /* banner related styles */
 #banner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 40px;
-    padding: 100px 0;
-    width: 100%;
-    background-image: url("./assets/hero-bg.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+  padding: 100px 0;
+  width: 100%;
+  max-width: 1600px;
+  margin: auto auto;
+  background-image: url("./assets/hero-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
 }
 
 .hero-img {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .hero-img #hero-circle {
-    position: relative;
-    width: 350px;
-    height: 350px;
+  position: relative;
+  width: 350px;
+  height: 350px;
 }
 
 .hero-img #hero-circle img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
 }
 
 #hero-circle #text {
-    position: absolute;
-    left: 280px;
-    top: 30px;
-    background-color: #00FF88;
-    border-radius: 10000px;
+  position: absolute;
+  left: 280px;
+  top: 30px;
+  background-color: #00ff88;
+  border-radius: 10000px;
 }
 #hero-circle #text p {
-    padding: 8px 10px;
-    font-weight: 600;
-    font-size: 1.125rem;
+  padding: 8px 16px;
+  font-weight: 600;
+  font-size: 1.125rem;
 }
 
 #hero-circle #text:hover {
-    transform: rotate(-20deg);
+  transform: rotate(-20deg);
 }
-
 
 .hero-img #hero-microphone {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 200px;
-    height: 200px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
 }
 
-
 #hero-microphone img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
 }
 
 .hero-text {
-    width: 100%;
-    max-width: 550px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  width: 100%;
+  max-width: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
 }
 
 .hero-text .hero-heading {
-    font-size: 3.75rem;
-    font-weight: 800;
-    color: #FFFFFF;
-    margin-bottom: 8px;
+  font-size: 3.75rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 8px;
 }
 
 .hero-text .section-description {
-    font-size: 1rem;
-    color: #FFFFFF;
-    margin-bottom: 24px;
+  font-size: 1rem;
+  color: #ffffff;
+  margin-bottom: 24px;
 }
 
 .hero-text .btn-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
 }
 
-
-.hero-text .btn1, .hero-text .btn2{
-    padding: 12px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    font-weight: 600;
-    font-size: 1rem;
+.hero-text .btn1,
+.hero-text .btn2 {
+  padding: 12px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  font-size: 1rem;
 }
 
 .hero-text .btn1 {
-    color: #FFFFFF;
-    border: 1px solid transparent;
+  border: none;
+  color: #ffffff;
+  border: 1px solid transparent;
+  background-clip: padding-box;
 }
 
-.hero-text .btn-container div{
-    display: inline;
-    width: 20px;
-    height: 20px;
+.hero-text .btn-container div {
+  display: inline;
+  width: 20px;
+  height: 20px;
 }
 
 .hero-text .btn-container div img {
-    height: 16.5px;
-    width: 16.5px;
-    text-align: center;
+  height: 16.5px;
+  width: 16.5px;
+  text-align: center;
 }
 
 .hero-text .btn-container .btn2 {
-    background: transparent !important;
-    border: 1px solid #00FF88;
-    color: #00FF88;
+  background: transparent !important;
+  border: 1px solid #00ff88;
+  color: #00ff88;
 }
 
 .hero-text .btn-container .btn2:hover {
-    background: linear-gradient(
+  background: linear-gradient(
     to right,
     rgba(247, 233, 63, 1),
     rgba(251, 9, 180, 1),
     rgba(145, 0, 248, 1)
   ) !important;
+  color: #ffffff;
 }
 
 .hero-text .btn-container .btn1:hover {
-    background: transparent !important;
-    border: 1px solid #00FF88;
-    color: #00FF88;
+  background: transparent !important;
+  border: 1px solid #00ff88;
+  color: #00ff88;
+}
+
+/* mobile responsive   576 px */
+
+@media screen and (max-width: 576px) {
+  /* header related */
+  #header .navbar {
+    display: none;
+  }
+  #header .mobile-nav {
+    display: block;
+  }
+
+  #header .mobile-nav .hamburger-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px;
+  }
+
+  .hamburger-container {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hamburger-container img {
+    width: 18px;
+    height: 13.5px;
+  }
+
+  /* banner's styles */
+  #banner {
+    padding: 0;
+  }
+  .hero-img #hero-circle {
+    width: 200px;
+    height: 200px;
+  }
+
+  #hero-circle #text {
+    left: 165px;
+    top: 25px;
+  }
+
+  #hero-circle #text p {
+    font-size: 1rem;
+  }
+
+  .hero-img #hero-microphone {
+    width: 80px;
+    height: 80px;
+  }
+
+  .hero-text {
+  }
+
+  #banner .hero-img {
+    margin-top: 80px;
+  }
+
+  .hero-text .hero-heading {
+    font-size: 2.5rem;
+  }
 }
