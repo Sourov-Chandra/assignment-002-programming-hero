@@ -121,6 +121,24 @@
   color: #ffffff;
   transition: color 0.4s ease;
 }
+
+
+@keyframes rotation {
+  0%, 100% {
+    transform: rotate(0deg) scale(1);
+  }
+  25% {
+    transform: rotate(-8deg) scale(1.1);
+  }
+  75% {
+    transform: rotate(8deg) scale(1.1);
+  }
+}
+
+
+.navbar .btn {
+  animation: rotation 2s ease-in-out infinite;
+}
 .navbar .btn:hover {
   color: #582f2f;
 }
@@ -182,9 +200,10 @@
   font-size: 1.125rem;
 }
 
-#hero-circle #text:hover {
-  transform: rotate(-20deg);
+#hero-circle #text {
+  animation: rotation 2s ease-in-out infinite;
 }
+
 
 .hero-img #hero-microphone {
   position: absolute;
