@@ -43,6 +43,15 @@
   cursor: pointer;
 }
 
+button:hover {
+  background: linear-gradient(
+    to right,
+    rgba(145, 0, 248, 1),
+    rgba(251, 9, 180, 1),
+    rgba(247, 233, 63, 1)
+  ) !important;
+}
+
 /* header  styles */
 
 #header {
@@ -93,6 +102,11 @@
   color: #ffffff;
   font-weight: 500;
   font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar .menu li a:hover {
+  color: #948f8f;
 }
 
 .navbar .btn {
@@ -490,6 +504,15 @@ video open korle button ta Exist obosthay  thake   */
   transition: all 0.3s;
 }
 
+button:hover {
+  background: linear-gradient(
+    to right,
+    rgba(145, 0, 248, 1),
+    rgba(251, 9, 180, 1),
+    rgba(247, 233, 63, 1)
+  ) !important; /* Reversed gradient */
+}
+
 .play-button:hover {
   background-color: rgba(255, 0, 0, 1);
   transform: translate(-50%, -50%) scale(1.1);
@@ -606,6 +629,10 @@ video open korle button ta Exist obosthay  thake   */
   justify-content: center;
   align-items: center;
   text-align: center;
+  transition: border 0.3s ease;
+}
+.social-section .icon:hover {
+  border: 1px solid #000000;
 }
 
 .social-section .icon a {
@@ -658,6 +685,10 @@ footer{
   align-items: center;
   gap: 8px;
   color: #FFFFFF;
+  transition: color 0.3s ease;
+}
+#footer .container .social-media .icon-text a:hover {
+  color: #948f8f;
 }
 
 #footer .container .social-media .icon-text a p {
@@ -666,58 +697,16 @@ footer{
   opacity: 0.6;
 }
 
-#footer .reverve {
+#footer .reserve {
   line-height: 24px;
   color: #FAFAFA;
+  text-align: center;
 }
 
 
 /* mobile responsive   576 px */
 
 @media screen and (max-width: 576px) {
-
-/* footer */
-
- #footer {
-    background-size: 100% auto; /* Shows full image without cropping */
-    background-position: center center;
-    padding: 30px 10px;
-}
-
-#footer .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 24px;
-}
-
-#footer .container .logo {
-  font-size: 1.9rem;
-}
-#footer .container .social-media {
-  /* flex-direction: column; */
-  flex-wrap: wrap;
-  gap: 21px 16px;
-  width: 100%;
-  max-width: 280px;
-}
-
-#footer .container .social-media .icon-text a {
-  text-decoration: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  color: #FFFFFF;
-}
-
-#footer .container .social-media .icon-text a p {
-  font-size: 1rem;
-  font-weight: 500;
-  opacity: 0.6;
-}
-
 
 
   /* header related */
@@ -913,5 +902,48 @@ footer{
   align-items: center;
   text-align: center;
 }
+
+/* footer */
+
+ #footer {
+    background-size: 100% auto; /* Shows full image without cropping */
+    background-position: center center;
+    padding: 30px 10px;
+}
+
+#footer .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 24px;
+}
+
+#footer .container .logo {
+  font-size: 1.9rem;
+}
+#footer .container .social-media {
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  gap: 21px 16px;
+  width: 100%;
+  max-width: 280px;
+}
+
+#footer .container .social-media .icon-text a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  color: #FFFFFF;
+}
+
+#footer .container .social-media .icon-text a p {
+  font-size: 1rem;
+  font-weight: 500;
+  opacity: 0.6;
+}
+
 
 }
