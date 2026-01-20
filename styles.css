@@ -478,17 +478,17 @@ main {
 /* ai card(card number-2) ta te button ta add kori nai     karon - 
 video open korle button ta Exist obosthay  thake   */
 
-.video-card .video-container #video-hide {
+/* .video-card .video-container #video-hide {
   display: none;
-}
-.video-thumbnail {
+} */
+/* .video-thumbnail {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
+} */
 
 .play-button {
   position: absolute;
